@@ -1,7 +1,11 @@
  html, body {
     max-width: 100%;
     max-height: 100%;
-    margin: 0;
+}
+
+body, html{
+margin: 0;
+padding: 0;
 }
 hr {
     
@@ -11,27 +15,53 @@ hr {
 }
 
 .header {
-    background-color: violet;
+    background-color: #313131;
     width: 100%;
-    height: 150px;
+    height: 100px;
     text-align: center;
     margin-top: 0;
 }
 
-.search {
-    position: relative;
-    margin-top: -25px;
-    margin-left: 1050px;
+.search-box {
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none
 }
-
-.site_search {
-    display: block;
-    font: 5rem 'Fira Sans', sans-serif;
-    border-radius: 500px 500px;
+   
+.search-btn {
+    float: right;
+    width: 130px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
 }
-
-.area_search {
-    border-radius: 15px 15px;
+   
+.search-btn > i {
+    font-size: 30px;
+}
+   
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0px;
+    font-weight: bold;
 }
 
 .nav {
@@ -40,6 +70,7 @@ hr {
     height: 75px;
     /* font-size: 0; */
     text-align: center;
+    border-top: 5px solid #45AAF2;
 }
 
 .nav .item {
@@ -171,4 +202,12 @@ hr {
     height: 150px;
     text-align: center;
     margin-top: 3%;
+}
+
+#logo{
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
 }
