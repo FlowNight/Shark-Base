@@ -2,89 +2,99 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
 
 
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="/CSS/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 
-    <title>Shark Base</title>
+	<title>Shark Base</title>
 </head>
 
 <body>
-    <header class="header">
-        <img id="logo" src="/img/logo requin.png" alt="Logo_Requin">
+	<header class="header">
+		<div class="header_content d-flex flex-row align-items-center justify-content-start">
 
-        <div>
-            <input class="search-box" type="text" name="" placeholder="Rechercher">
-            <a href="#" class="search-btn">
-                <i class="fas fa-search"></i>
-            </a>
+			<!-- Hamburger -->
+			<div class="hamburger menu_mm"><i class="fa fa-bars menu_mm" aria-hidden="true"></i></div>
 
-        </div>
-    </header>
+			<!-- Logo -->
+			<div class="header_logo">
+				<a href="#">
+					<div>Shark<span>Base</span></div>
+				</a>
+			</div>
 
-    <nav class="nav">
+			<!-- Navigation -->
+			<nav class="header_nav">
+				<ul class="d-flex flex-row align-items-center justify-content-start">
+					<li><a href="index.html">home</a></li>
+					<li><a href="#">woman</a></li>
+					<li><a href="#">man</a></li>
+					<li><a href="#">lookbook</a></li>
+					<li><a href="#">blog</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</nav>
 
-        <p>NAVBAR</p>
-        <div class="item switch_button">
-            <h1>Switch</h1>
-        </div>
-        <div class="item playstation_button">
-            <h1>Playstation</h1>
-        </div>
-        <div class="item xbox_button">
-            <h1>Xbox</h1>
-        </div>
-        <div class="item pc_button">
-            <h1>PC</h1>
-        </div>
-    </nav>
+			<!-- Header Extra -->
+			<div class="header_extra ml-auto d-flex flex-row align-items-center justify-content-start">
 
-    <article class="switch">
-        <p>SWITCH</p>
-        <section class="game_one_switch">
-            <p>Jeu 1</p>
-        </section>
-        <section class="game_two_switch">
-            <p>Jeu 2</p>
-        </section>
-        <section class="game_three_switch">
-            <p>Jeu 3</p>
-        </section>
-        <section class="game_four_switch">
-            <p>Jeu 4</p>
-        </section>
-        <section class="game_five_switch">
-            <p>Jeu 5</p>
-        </section>
-    </article>
+				<!-- Language -->
+				<div class="info_languages has_children">
+					<div class="language_flag"><img src="images/flag_1.svg"
+							alt="https://www.flaticon.com/authors/freepik"></div>
+					<div class="dropdown_text">english</div>
+					<div class="dropdown_arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
 
-    <article class="playstation">
-        <p>PLAYSTATION</p>
-        <section class="game_one_playstation">
-            <p>Jeu 1</p>
-        </section>
-        <section class="game_two_playstation">
-            <p>Jeu 2</p>
-        </section>
-        <section class="game_three_playstation">
-            <p>Jeu 3</p>
-        </section>
-        <section class="game_four_playstation">
-            <p>Jeu 4</p>
-        </section>
-        <section class="game_five_playstation">
-            <p>Jeu 5</p>
-        </section>
-    </article>
+					<!-- Language Dropdown Menu -->
+					<ul>
+						<li><a href="#">
+								<div class="language_flag"><img src="images/flag_2.svg"
+										alt="https://www.flaticon.com/authors/freepik"></div>
+								<div class="dropdown_text">french</div>
+							</a></li>
+					</ul>
 
+				</div>
 
-    <footer class="contact">
-        <p>CONTACT</p>
-    </footer>
+				<!-- Currency -->
+				<div class="info_currencies has_children">
+					<div class="dropdown_text">usd</div>
+					<div class="dropdown_arrow"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+
+					<!-- Currencies Dropdown Menu -->
+					<ul>
+						<li><a href="#">
+								<div class="dropdown_text">EUR</div>
+							</a></li>
+						<li><a href="#">
+								<div class="dropdown_text">YEN</div>
+							</a></li>
+						<li><a href="#">
+								<div class="dropdown_text">GBP</div>
+							</a></li>
+						<li><a href="#">
+								<div class="dropdown_text">CAD</div>
+							</a></li>
+					</ul>
+
+				</div>
+
+				<!-- Cart -->
+				<div class="cart d-flex flex-row align-items-center justify-content-start">
+					<div class="cart_icon"><a href="cart.html">
+							<img src="images/bag.png" alt="">
+							<div class="cart_num">2</div>
+						</a></div>
+				</div>
+
+			</div>
+
+		</div>
+	</header>
 
 
 </body>
