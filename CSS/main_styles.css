@@ -1330,7 +1330,7 @@ section
 .product_button
 {
 	width: 138px;
-	height: 45px;
+	height: 80px;
 	background: #edf4f6;
 	text-align: center;
 	margin-top: 22px;
@@ -1346,7 +1346,7 @@ section
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #1a1a1a;
-	line-height: 45px;
+	line-height: 40px;
 }
 
 /*********************************
