@@ -69,7 +69,7 @@ if (isset($_POST['submit'])){
         <div class="text-center">
             <h3>Espace Client - Inscription</h3>
             <a href="index.php">Accueil</a>
-            <a href="login.php">Se Connecter</a>
+            <a href="login.html">Se Connecter</a>
         </div>
         <div class="form-div text-center">
             <h3>Inscription</h3>

@@ -5,7 +5,7 @@
      */
     function getPDO() {
         try {
-            $pdo = new PDO('mysql:dbname=clients;host=127.0.0.1', 'root', '123');
+            $pdo = new PDO('mysql:dbname=clients;host=127.0.0.1', 'root', '');
             $pdo->exec("SET CHARACTER SET utf8");
             return $pdo;
         } catch (PDOException $e) {
