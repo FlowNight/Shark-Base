@@ -1,7 +1,7 @@
 <?php
  
 session_start();
-include 'inc/database.php';
+include 'includes/database.php';
  
 if (isset($_SESSION['userEmail'])) {
     header('Location:index.php');
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])){
                                 0,
                                 $date
                             ]);
-                            $succesMessage = "Votre compte à bien été créé !";
+                            $succesMessage = "Votre compte utilisateur a bien été enregistré !";
                             header('refresh:3;url=login.php');
                         } else {
                             $errorMessage = 'Cette pseudo est déjà utilisée..';
@@ -62,8 +62,8 @@ if (isset($_POST['submit'])){
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Espace Client - Inscription</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <title> Inscription </title>
+        <link rel="stylesheet" type="text/css" href="/CSS/style-register.css">
     </head>
     <body>
         <div class="text-center">

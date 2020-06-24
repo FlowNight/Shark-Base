@@ -1,7 +1,7 @@
 <?php
  
 session_start();
-include 'inc/database.php';
+include 'includes/database.php';
  
 if (isset($_POST['submit'])) {
  
@@ -33,8 +33,8 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Espace Client - Accueil</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <title> Accueil </title>
+        <link rel="stylesheet" type="text/css" href="/CSS/style-register.css">
     </head>
     <body>
         <div class="text-center">

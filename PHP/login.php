@@ -1,7 +1,7 @@
 <?php
  
 session_start();
-include 'inc/database.php';
+include 'includes/database.php';
  
 if (isset($_SESSION['userEmail'])) {
     header('Location:index.php');
@@ -44,8 +44,8 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Espace Client - Connexion</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <title> Connexion </title>
+        <link rel="stylesheet" type="text/css" href="/CSS/style-register.css">
     </head>
     <body>
         <div class="text-center">
