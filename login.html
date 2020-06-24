@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Connexion </title>
+</head>
+<body>
+    <link rel="stylesheet" href="/CSS/login.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <img src="/images/sharkbase.png" alt="logo">
+
+  <form action="index.html" class="login-form">
+    <h1>Connexion</h1>
+
+    <div class="txtb">
+      <input type="text">
+      <span data-placeholder="Nom d'utilisateur"></span>
+    </div>
+
+    <div class="txtb">
+      <input type="password" value="">
+      <!-- <span class="show-password">afficher</span> -->
+      <span data-placeholder="Mot de passe"></span>
+
+    </div>
+
+    <a class="btn" href="/HTML/index.html"> <input type="submit" class="logbtn" value="Connexion"> </a>
+
+    <div class="bottom-text">
+      Je n'ai pas de compte ? <br>
+      <a href="/PHP/register.php">S'inscrire</a>
+    </div>
+
+  </form>
+
+  <script type="text/javascript">
+    $(".txtb input").on("focus", function () {
+      $(this).addClass("focus");
+    });
+
+    $(".txtb input").on("blur", function () {
+      if ($(this).val() == "")
+        $(this).removeClass("focus");
+    });
+  </script>
+</body>
+</html>
