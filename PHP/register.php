@@ -35,7 +35,7 @@ if (isset($_POST['submit'])){
                                 0,
                                 $date
                             ]);
-                            $succesMessage = "Votre compte utilisateur a bien été enregistré !";
+                            $succesMessage = "Votre compte à bien été créé !";
                             header('refresh:3;url=login.php');
                         } else {
                             $errorMessage = 'Cette pseudo est déjà utilisée..';
@@ -62,14 +62,14 @@ if (isset($_POST['submit'])){
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Inscription </title>
-        <link rel="stylesheet" type="text/css" href="/CSS/style-register.css">
+        <title>Espace Client - Inscription</title>
+        <link rel="stylesheet" type="text/css" href="style-register.css">
     </head>
     <body>
         <div class="text-center">
-            <h3>Espace Client - Inscription</h3>
+            <h3> Inscription </h3>
             <a href="index.php">Accueil</a>
-            <a href="login.html">Se Connecter</a>
+            <a href="login.php">Se Connecter</a>
         </div>
         <div class="form-div text-center">
             <h3>Inscription</h3>

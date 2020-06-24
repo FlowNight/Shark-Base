@@ -1,11 +1,11 @@
 <?php
  
-
-    //Connexion à la base de données.
-   
+    /**
+     * Connexion à la base de données.
+     */
     function getPDO() {
         try {
-            $pdo = new PDO('mysql:dbname=clients;host=localhost', 'root', '');
+            $pdo = new PDO('mysql:dbname=clients;host=127.0.0.1', 'root', '');
             $pdo->exec("SET CHARACTER SET utf8");
             return $pdo;
         } catch (PDOException $e) {

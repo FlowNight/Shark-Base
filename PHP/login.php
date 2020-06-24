@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
 <html>
     <head>
         <title> Connexion </title>
-        <link rel="stylesheet" type="text/css" href="/CSS/style-register.css">
+        <link rel="stylesheet" type="text/css" href="style-register.css">
     </head>
     <body>
         <div class="text-center">

@@ -34,14 +34,13 @@ if (isset($_POST['submit'])) {
 <html>
     <head>
         <title> Accueil </title>
-        <link rel="stylesheet" type="text/css" href="/CSS/style-register.css">
+        <link rel="stylesheet" type="text/css" href="style-register.css">
     </head>
     <body>
         <div class="text-center">
-            <h3>Espace Client - Accueil</h3>
-            <a href="login.php">Se connecter</a>
-            <a href="register.php">S'inscrire</a>
-            <a href="admin.php">Admin</a>
+            <h3> Accueil </h3>
+            <a href="login.php"> Se connecter </a><br>
+            <a href="register.php"> S'inscrire </a>
         </div>
         <div class="form-div text-center">
                 <h3>Information</h3>
@@ -72,7 +71,7 @@ if (isset($_POST['submit'])) {
                         </form>
                        
                     <?php } } else { ?>
-                    <p>Vous n'êtes pas connecté !</p>
+                    <p> Vous n'êtes pas connecté ! </p>
                 <?php } ?>
         </div>
     </body>
